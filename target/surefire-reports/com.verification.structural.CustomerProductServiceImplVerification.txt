@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: com.verification.structural.CustomerProductServiceImplVerification
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 2, Errors: 1, Skipped: 0, Time elapsed: 0.012 s <<< FAILURE! - in com.verification.structural.CustomerProductServiceImplVerification
+annotations$ServiceAnnotation  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "org.springframework.stereotype.Service.value()" because the return value of "java.lang.Class.getAnnotation(java.lang.Class)" is null
+	at com.verification.structural.CustomerProductServiceImplVerification.annotations$ServiceAnnotation(CustomerProductServiceImplVerification.java:29)
+
+annotations$TransactionalAnnotation  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at com.verification.structural.CustomerProductServiceImplVerification.annotations$TransactionalAnnotation(CustomerProductServiceImplVerification.java:42)
+
+attributes$ProductRepositoryAttributeAutowiredAnnotation  Time elapsed: 0.005 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at com.verification.structural.CustomerProductServiceImplVerification.attributes$ProductRepositoryAttributeAutowiredAnnotation(CustomerProductServiceImplVerification.java:69)
+

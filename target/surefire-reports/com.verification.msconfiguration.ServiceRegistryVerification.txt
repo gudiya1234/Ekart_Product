@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.verification.msconfiguration.ServiceRegistryVerification
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.239 s <<< FAILURE! - in com.verification.msconfiguration.ServiceRegistryVerification
+serviceRegistryForProductMS  Time elapsed: 0.023 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <200> but was: <404>
+	at com.verification.msconfiguration.ServiceRegistryVerification.serviceRegistryForProductMS(ServiceRegistryVerification.java:27)
+

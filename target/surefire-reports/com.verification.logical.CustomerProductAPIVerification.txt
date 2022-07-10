@@ -1,0 +1,36 @@
+-------------------------------------------------------------------------------
+Test set: com.verification.logical.CustomerProductAPIVerification
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 4, Errors: 1, Skipped: 0, Time elapsed: 5.579 s <<< FAILURE! - in com.verification.logical.CustomerProductAPIVerification
+getProductById  Time elapsed: 0.054 s  <<< FAILURE!
+org.mockito.exceptions.verification.WantedButNotInvoked: 
+
+Wanted but not invoked:
+customerProductService.getProductById(1000);
+-> at com.verification.logical.CustomerProductAPIVerification.getProductById(CustomerProductAPIVerification.java:73)
+Actually, there were zero interactions with this mock.
+
+	at com.verification.logical.CustomerProductAPIVerification.getProductById(CustomerProductAPIVerification.java:73)
+
+getAllProducts  Time elapsed: 0.008 s  <<< FAILURE!
+org.mockito.exceptions.verification.WantedButNotInvoked: 
+
+Wanted but not invoked:
+customerProductService.getAllProducts();
+-> at com.verification.logical.CustomerProductAPIVerification.getAllProducts(CustomerProductAPIVerification.java:142)
+Actually, there were zero interactions with this mock.
+
+	at com.verification.logical.CustomerProductAPIVerification.getAllProducts(CustomerProductAPIVerification.java:142)
+
+reduceAvailableQuantity  Time elapsed: 0.006 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "org.springframework.http.ResponseEntity.getStatusCode()" because "actualResponseEntity" is null
+	at com.verification.logical.CustomerProductAPIVerification.reduceAvailableQuantity(CustomerProductAPIVerification.java:84)
+
+reduceAvailableQuantity$ProductNotAvailabe  Time elapsed: 0.012 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Expected com.infy.ekart.product.exception.EKartProductException to be thrown, but nothing was thrown.
+	at com.verification.logical.CustomerProductAPIVerification.reduceAvailableQuantity$ProductNotAvailabe(CustomerProductAPIVerification.java:187)
+
+getProductById$ProductNotAvailabe  Time elapsed: 0.007 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Expected com.infy.ekart.product.exception.EKartProductException to be thrown, but nothing was thrown.
+	at com.verification.logical.CustomerProductAPIVerification.getProductById$ProductNotAvailabe(CustomerProductAPIVerification.java:167)
+

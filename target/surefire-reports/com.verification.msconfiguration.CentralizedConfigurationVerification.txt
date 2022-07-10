@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: com.verification.msconfiguration.CentralizedConfigurationVerification
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 1.494 s <<< FAILURE! - in com.verification.msconfiguration.CentralizedConfigurationVerification
+bootstrapYaml  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at com.verification.msconfiguration.CentralizedConfigurationVerification.bootstrapYaml(CentralizedConfigurationVerification.java:103)
+
+serverApplicationName  Time elapsed: 0.017 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at com.verification.msconfiguration.CentralizedConfigurationVerification.serverApplicationName(CentralizedConfigurationVerification.java:123)
+
+applicationProperties  Time elapsed: 0.014 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <null> but was: <root>
+	at com.verification.msconfiguration.CentralizedConfigurationVerification.applicationProperties(CentralizedConfigurationVerification.java:62)
+
